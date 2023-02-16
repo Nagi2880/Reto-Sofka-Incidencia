@@ -1,0 +1,18 @@
+.FormContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.DatosContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 400px;
+}
+.BotonesContainer{
+    display: flex;
+    align-items: flex-start;
+
+    width: 400px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Notificar incidencia</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+	<form class="FormContainer" method="post" action="procesar-incidencia.php">
+		<fieldset class="DatosContainer">
+			<legend>Detalles de la incidencia</legend>
+			<label for="usuario">Usuario:</label>
+			<input type="text" id="usuario" name="usuario" required>
+			<label for="departamento">Departamento:</label>
+			<select id="departamento" name="departamento" required>
+				<option value="">Seleccione un departamento</option>
+				<option value="informatica">Informática</option>
+				<option value="marketing">Marketing</option>
+				<option value="ventas">Ventas</option>
+			</select>
+			<label for="descripcion">Descripción:</label>
+			<textarea id="descripcion" name="descripcion" rows="3" cols="40" required></textarea>
+			<label for="contrasena">Contraseña:</label>
+			<input type="password" id="contrasena" name="contrasena" required>
+		</fieldset>
+        <fieldset class="BotonesContainer">
+            <legend>Botones de reset y envio:</legend>
+		    <div>
+			    <button class="BotonReset" type="reset">Resetear</button>
+			    <button class="BotonEnviar" type="submit">Enviar</button>
+		    </div>
+    </fieldset>
+    </form>
+</body>
+</html>
